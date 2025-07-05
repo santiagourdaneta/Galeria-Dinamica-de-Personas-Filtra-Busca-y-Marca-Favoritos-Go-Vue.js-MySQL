@@ -1,0 +1,2 @@
+# Galeria-Dinamica-de-Personas-Filtra-Busca-y-Marca-Favoritos-Go-Vue.js-MySQL
+Galería de personas en una interfaz moderna y rápida. Filtra por género (hombres y mujeres), busca perfiles por nombre y marca tus favoritos con un simple 'like' persistente. Desarrollado con Go para el backend, MySQL para la base de datos y Vue.js en el frontend, ofrece una experiencia de usuario fluida y reactiva sin recargar la página.
