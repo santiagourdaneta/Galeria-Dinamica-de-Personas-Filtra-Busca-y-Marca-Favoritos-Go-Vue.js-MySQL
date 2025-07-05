@@ -1,0 +1,67 @@
+# hot-or-not/.gitignore
+
+# Go Backend (backend/)
+# --------------------
+/backend/bin/
+/backend/*.exe
+/backend/*.test
+/backend/*.prof
+/backend/vendor/ # If you're using Go Modules, this might not be strictly necessary as go.mod/sum track dependencies.
+                # However, if you explicitly use 'go mod vendor', exclude it.
+/backend/.idea/ # IntelliJ / GoLand IDE files
+/backend/.vscode/ # VS Code workspace settings (optional, sometimes useful to share)
+/backend/tmp/ # Temporary files
+/backend/build/ # Build output directory
+/backend/nohup.out # Output from nohup command if used
+
+# Frontend (frontend/)
+# --------------------
+/frontend/node_modules/
+/frontend/dist/ # Vite build output directory
+/frontend/.vscode/ # VS Code workspace settings (optional)
+/frontend/.idea/ # WebStorm / IntelliJ IDE files
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/.env.local # Local environment variables (e.g., VITE_APP_API_URL)
+/frontend/.env.*.local # More specific local environment files
+/frontend/cache/ # Vue/Vite development cache
+/frontend/.vite/ # Vite's internal cache directory
+
+# Environment Variables (for both backend and frontend)
+# ---------------------------------------------------
+.env # Generic .env files
+.env.* # All .env files (e.g., .env.development, .env.production)
+!*.example # Keep .env.example files if you use them to show required variables
+
+# Database (for local development, never commit actual DB files)
+# -------------------------------------------------------------
+*.sql.dump # Database dumps
+*.sqlite3 # SQLite databases (if you were using one)
+*.db # Generic database files
+
+# OS-generated files
+# ------------------
+.DS_Store # macOS
+Thumbs.db # Windows
+ehthumbs.db # Windows
+.directory # Linux (KDE)
+
+# Logs
+# ----
+*.log
+logs/
+*.trace
+
+# Other common temporary files
+# ----------------------------
+*~ # Emacs/Vim backups
+*.swp # Vim swap files
+*.swo # Vim swap files
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+.buildpath
